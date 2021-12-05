@@ -19,6 +19,16 @@ pipeline {
                 echo "Testing on DEV"
             }
         }
+        stage('deploy-int') {
+            steps {
+                echo "Deploying to INT"
+            }
+        }
+        stage('test-int') {
+            steps {
+                echo "Testing on INT"
+            }
+        }
         stage('deploy-prd') {
             steps {
                 echo "Deploying to PRD"
